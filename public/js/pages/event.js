@@ -11,7 +11,7 @@ $(document).ready(function(){
     $("#end_date").datepicker({
         'dateFormat' : 'yy-mm-dd',
         onSelect: function(selected) {
-           $("#end_date").datepicker("option","maxDate", selected)
+           $("#start_date").datepicker("option","maxDate", selected)
         }
     });
 
