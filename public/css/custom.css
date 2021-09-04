@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+/* your styles go here */
+span.error{ color:red;}
+
+.logo-img{
+  width: 1em;
+  margin-right: 0.3em;
+}
+
+.logo-inner {
+    width: 8em;
+    height: 8em;
+    margin: 0 0 1em;
+    background: #fff;
+    padding: 1em;
+    margin: 0 auto 1em;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-inner .logo-img {
+    width: 85%;
+    margin: 0;
+}
+.btn-secondary:focus, .btn-secondary.focus, .btn-primary:focus, .btn-primary.focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: red;
+    border-color: red;
+}
+.action-btn{
+    margin: 0 0.2em;
+}
+
+.red{
+    color:#D0011B;
+    font-size: 1.3em;
+}
+.green{
+    color:#4CAF50;
+    font-size: 1.3em;
+}
+
+
+
+/* custom css */
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color:#000 !important;
+  }
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
+background-color: transparent;
+outline: none;
+}
+:root{
+    --white-color:#ffffff;
+    --black-color:#000000;
+    --para-color:#a9a9a9;
+    --roboto-font:'Roboto', sans-serif;
+    --rubik-font:'Rubik', sans-serif;
+}
+body {
+    font-family:var(--roboto-font);
+  }
+  .login-page::before {
+    background: url(../images/left-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.login-page .form-holder .info {
+    background:rgba(0,0,0,0.8);
+    justify-content: center;
+}
+.logo-inner {
+    background:var(--black-color);
+}
+.btn-primary {
+    background-color: var(--black-color);
+    border-color: var(--black-color);
+}
+.btn-primary:hover {
+    background-color: transparent;
+    color:var(--black-color);
+    border-color: var(--black-color);
+}
+input.input-material:focus {
+    border-color: #000000;
+}
+input.input-material {
+  background-color: transparent !important;
+}
+input.input-material ~ label.active {
+    color:var(--black-color);
+}
+
+.dz-progress {
+  /* progress bar covers file name */
+  display: none !important;
+}
+.panel-body.view-upload{
+    padding:0;
+}
+.panel-body.view-upload .col-md-2:first-child{
+   margin:0 -15px;
+}
+
+.div-wrap{
+    display:flex;
+    flex-wrap:wrap;
+}
+.div-wrap .res-div-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em 1em 0;
+}
+
+
+.avatar img {
+    width: 55px !important;
+    height: 55px !important;
+}
+
+
+/* loader */
+.loader {
+  background: rgba(0,0,0,0.8) url("../images/ajax-loader.gif") center no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999999;
+  display: none;
+}
+
+
+
+/* design changes */
+nav.navbar .dropdown-menu .dropdown-item i,.btn-primary,.login-page .form-holder .info{
+    background-image: linear-gradient(90deg, #9633fe 0%, #4c88ee 100%);
+}
+.btn-primary{
+    background-color: transparent;
+    border:none;
+}
+nav.navbar,footer.main-footer{
+    background-image: linear-gradient(90deg, #9633fe 0%, #4c88ee 100%);
+}
+nav.side-navbar .title p {
+    color: #7b7b7b;
+    font-weight: 500;
+}
+nav.side-navbar ul li.active > a{
+    background-image: linear-gradient(90deg, #9633fe 0%, #4c88ee 100%);
+    border-left: 4px solid #000000;
+}
+.bg-violet {
+    background-image: linear-gradient(90deg, #9633fe 0%, #4c88ee 100%) !important;
+}
+.action-btn {
+    padding: 0 0.5em;
+}
+#profileFrm .col-sm-9 img{
+    margin-top: 1.5em;
+}
+@media (min-width:999px) {
+    .logo-img {
+        max-width: 3em;
+        margin-right: 0.7em;
+    }
+  }
+  @media (min-width:767px) {
+    .logo-img {
+        max-width: 2.5em;
+        margin-right: 0.5em;
+    }
+  }
+.dropzone {
+    border: 1px solid #dee2e6 !important;
+}
+table.dataTable.no-footer {
+    border-bottom: 1px solid #111;
+    padding: 1em 0;
+}
+.dataTables_wrapper {
+    overflow: auto;
+}
+.form-panel.profile-content.view-border .form-group .col-md-8 label,.form-panel.profile-content.view-border .form-group .col-md-8 p{
+    padding-top: calc(.375rem + 1px);
+    padding-bottom: calc(.375rem + 1px);
+    margin: 0;
+}
+.form-panel.profile-content.view-border .form-group .col-md-8,.form-panel.profile-content.view-border .form-group .panel{
+    border-left:1px solid #dee2e6 !important;
+}
+.form-panel.profile-content.view-border .form-group .panel .res-div-wrap{
+    padding: 1em;
+}
+.form-panel.profile-content.view-border .form-group > div{
+    padding-top:0.3em;
+    padding-bottom:0.3em;
+}
+.form-panel.profile-content.view-border .form-group:not(:last-child){
+    border: 1px solid #dee2e6;
+    margin: 0;
+}
+
+.form-panel.profile-content.view-border .form-group + .form-group,.form-panel.profile-content.view-border .form-group + .line +.form-group{
+    border-top:0;
+}
+@media (max-width: 576px){
+    .form-panel.profile-content.view-border .form-group .col-md-8{
+        border-left: 0;
+    }
+    .form-panel.profile-content.view-border .form-group > div:first-child{
+        padding-bottom:0;
+    }
+    .form-panel.profile-content.view-border .form-group > div:last-child{
+        padding-top:0em;
+    }
+}
+@media (min-width: 767px){
+    .login-page .logo-img {
+        max-width: 4.5em;
+    }
+    .logo-img {
+        max-width: 3.5em;
+        width: 100%;
+        margin-right: 1em;
+    }
+}
+.btn-primary:hover {
+    color: var(--white-color);
+}
+.profile-box.profile-res .form-panel .line{
+    display: none;
+}
+.profile-box.profile-res .form-panel .form-group:last-child{
+    margin-top: 2rem;
+}
+nav.side-navbar ul li a:hover,nav.side-navbar ul li.active > a:hover{
+    background-image: linear-gradient(90deg, #9633fe 0%, #4c88ee 100%);
+    border-left: 4px solid #000000;
+}
+nav.side-navbar.shrinked ul li.active > a{
+    border:none
+}
+.form-panel.profile-content.view-border .form-group .col-md-8 p {
+    word-break: break-all;
+}
+a#settings i {
+    margin: 0 0.2em 0 0;
+    font-size: 1.3em;
+}
+nav.navbar .nav-link.logout i {
+    font-size: 1.3em;
+}
+nav.navbar .nav-item > a {
+    font-size: inherit;
+}
+nav.side-navbar .title h1 {
+    margin: 0 0 0.3em;
+}
+.form-panel.profile-content.view-border .form-group .panel .res-div-wrap {
+    padding: 0.5em 0.5em 0.5em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    max-width: 100%;
+    width: 100%;
+}
+.form-panel.profile-content.view-border .form-group .panel .res-div-wrap img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    height: 8em;
+}
+@media (max-width: 1200px){
+    .form-panel.profile-content.view-border .form-group .panel .res-div-wrap {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width:999px){
+    .form-panel.profile-content.view-border .form-group .panel .res-div-wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:767px){
+    .form-panel.profile-content.view-border .form-group .panel .res-div-wrap {
+        grid-template-columns: 1fr;
+    }
+}
+.form-panel.profile-content.view-border .form-group .panel {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.dataTables_filter input[type="search"].form-control{
+    width: auto;
+}

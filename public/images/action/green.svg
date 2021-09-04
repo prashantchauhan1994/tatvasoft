@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" width="10" height="10">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #4caf50 } 
+	</style>
+	<g id="Page-1">
+		<g id="Dashboard">
+			<g id="Third-card">
+				<g id="Table">
+					<g id="first-traffic">
+						<path id="Oval-2" class="shp0" d="M5 10C2.23 10 0 7.76 0 5C0 2.24 2.23 0 5 0C7.77 0 10 2.24 10 5C10 7.76 7.77 10 5 10Z" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
