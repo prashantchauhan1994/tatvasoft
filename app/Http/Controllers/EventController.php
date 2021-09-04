@@ -213,7 +213,7 @@ class EventController extends Controller
     {
         $event = Event::find($id);
         if(!$event) {
-            return redirect("/");
+            return redirect(route('event.index'))->with(['alert-class' => 'error', 'message' => "Invalid Access!"]);
         }
         $title = "Update Event";
         $mode = "update";
@@ -260,7 +260,7 @@ class EventController extends Controller
     {
         $event = Event::find($id);
         if(!$event) {
-            return redirect("/");
+            return redirect(route('event.index'))->with(['alert-class' => 'error', 'message' => "Invalid Access!"]);
         }
         $title = "View Event";
         return view('event.view',compact('title', 'event'));
